@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COCI – Partage ton expérience de trajet</title>
+  <meta
+    name="description"
+    content="Sondage COCI : conducteurs et passagers d'Abidjan et de la diaspora, partagez vos habitudes de transport pour façonner un service de covoiturage adapté."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">COCI</div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#pourquoi">Pourquoi ce sondage ?</a>
+        <a href="#questionnaire">Questionnaire</a>
+        <a href="#insights">Ce que l'on analyse</a>
+        <a href="#parcours">La suite</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Navigation mobile">
+      <a href="#pourquoi">Pourquoi ce sondage ?</a>
+      <a href="#questionnaire">Questionnaire</a>
+      <a href="#insights">Ce que l'on analyse</a>
+      <a href="#parcours">La suite</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Sondage ouvert – Abidjan &amp; diaspora</p>
+          <h1>Construisons le covoiturage domicile ↔ travail pensé pour les Ivoiriens.</h1>
+          <p class="lead">
+            Tu conduis ou tu cherches un trajet vers le Plateau, Cocody, Yopougon, Marcory ou ailleurs ?
+            En 5 minutes, partage tes habitudes de transport, tes contraintes et tes envies. Chaque réponse
+            nous aide à lancer un service utile dès le premier jour.
+          </p>
+          <div class="cta-group">
+            <a class="cta" href="#questionnaire">Je réponds maintenant</a>
+            <a class="cta secondary" href="#pourquoi">En savoir plus</a>
+          </div>
+          <ul class="hero-metrics">
+            <li>
+              <span class="metric">5&nbsp;min</span>
+              <span class="label">pour compléter le questionnaire</span>
+            </li>
+            <li>
+              <span class="metric">2 profils</span>
+              <span class="label">conducteurs &amp; passagers, formulaires dédiés</span>
+            </li>
+            <li>
+              <span class="metric">Priorité</span>
+              <span class="label">accès anticipé au pilote COCI</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h2>Pourquoi participer ?</h2>
+          <ul>
+            <li>On valide que l'offre répond à tes besoins réels.</li>
+            <li>Tu influences les horaires, les points de prise en charge et le niveau de sécurité attendu.</li>
+            <li>Tu seras parmi les premiers invités à tester le corridor pilote.</li>
+          </ul>
+          <p class="note">Répondre ne t'engage à rien. Ton avis reste confidentiel et partagé uniquement avec l'équipe COCI.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pourquoi">
+      <div class="container section-grid">
+        <div>
+          <h2>Pourquoi ce sondage est clé</h2>
+          <p class="section-lead">
+            Abidjan et sa diaspora inventent déjà mille façons de se déplacer : collègues qui partagent l'essence,
+            voisins qui s'arrangent par WhatsApp, taxis collectifs improvisés… Nous voulons comprendre ce qui marche
+            (ou pas) aujourd'hui pour bâtir une solution qui colle à la réalité du terrain.
+          </p>
+          <ul class="insights-list">
+            <li>Identifier les trajets les plus tendus et les heures d'embouteillage critiques.</li>
+            <li>Mesurer la tolérance à l'attente, les attentes de sécurité et de confiance.</li>
+            <li>Estimer les prix considérés comme justes pour partager les frais.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ce que tu nous aides à décider</h3>
+          <div class="kpi-card">
+            <span class="kpi-label">Points surveillés</span>
+            <span class="kpi-value">Match rapide, coût équitable, sécurité rassurante</span>
+          </div>
+          <ul class="insights-list">
+            <li>Quel quartier prioriser pour le premier corridor pilote.</li>
+            <li>Quelles incitations proposer aux conducteurs réguliers.</li>
+            <li>Quel canal privilégier (app, WhatsApp, SMS) pour coordonner les trajets.</li>
+          </ul>
+          <p class="note">
+            Tu vis en France mais tu reviens souvent à Abidjan ? Ton retour compte aussi : raconte-nous comment tu aimerais te déplacer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="questionnaire">
+      <div class="container">
+        <h2>Questionnaire COCI</h2>
+        <p class="section-lead">
+          Choisis le formulaire qui te correspond le mieux. Tu peux en remplir plusieurs si tu es parfois conducteur et parfois passager.
+          Chaque question est pensée pour comprendre tes habitudes, tes freins et ce qui te ferait dire «&nbsp;oui&nbsp;» à un trajet partagé.
+        </p>
+
+        <div class="toggle-group" role="tablist" aria-label="Sélection du questionnaire">
+          <button class="toggle-button active" type="button" role="tab" aria-selected="true" aria-controls="driver-form">
+            Conducteur·rice
+          </button>
+          <button class="toggle-button" type="button" role="tab" aria-selected="false" aria-controls="passenger-form">
+            Passager·ère
+          </button>
+        </div>
+
+        <div class="forms">
+          <form id="driver-form" class="waitlist-form" autocomplete="on">
+            <h3>Je conduis (occasionnellement ou tous les jours)</h3>
+            <p class="form-intro">
+              Décris-nous ton trajet type et ce qu'il te faudrait pour accepter 1 à 2 passagers. Les champs marqués d'une astérisque (*) sont indispensables.
+            </p>
+
+            <div class="form-grid">
+              <label>
+                <span>Prénom (optionnel)</span>
+                <input type="text" name="prenom" autocomplete="given-name" data-label="Prénom" />
+              </label>
+              <label>
+                <span>Pays actuel *</span>
+                <select name="pays" required data-label="Pays actuel">
+                  <option value="" disabled selected>Choisis une option</option>
+                  <option value="cote-ivoire">Côte d'Ivoire</option>
+                  <option value="france">France</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </label>
+              <label>
+                <span>Quartier de départ habituel *</span>
+                <input
+                  type="text"
+                  name="quartier_depart"
+                  placeholder="Ex. Cocody Angré, Yopougon Siporex…"
+                  required
+                  data-label="Quartier de départ"
+                />
+              </label>
+              <label>
+                <span>Destination principale *</span>
+                <input
+                  type="text"
+                  name="destination"
+                  placeholder="Ex. Plateau, Zone 4, Treichville…"
+                  required
+                  data-label="Destination principale"
+                />
+              </label>
+              <label>
+                <span>Type de véhicule</span>
+                <select name="type_vehicule" data-label="Type de véhicule">
+                  <option value="">Sélectionne</option>
+                  <option value="citadine">Citadine</option>
+                  <option value="berline">Berline</option>
+                  <option value="suv">SUV / 4x4</option>
+                  <option value="utilitaire">Utilitaire</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </label>
+              <label>
+                <span>Places disponibles que tu accepterais *</span>
+                <select name="places_disponibles" required data-label="Places disponibles">
+                  <option value="" disabled selected>Choisis</option>
+                  <option value="1">1 place</option>
+                  <option value="2">2 places</option>
+                  <option value="3">3 places</option>
+                  <option value="plus">Plus si besoin</option>
+                </select>
+              </label>
+              <label>
+                <span>Départ matin (heure la plus fréquente)</span>
+                <input type="time" name="horaire_matin" data-label="Départ matin" />
+              </label>
+              <label>
+                <span>Retour soir (heure la plus fréquente)</span>
+                <input type="time" name="horaire_soir" data-label="Retour soir" />
+              </label>
+              <label class="full">
+                <span>Quel corridor fais-tu le plus souvent ? *</span>
+                <input
+                  type="text"
+                  name="corridor"
+                  placeholder="Ex. Angré → Plateau, Bingerville → Marcory…"
+                  required
+                  data-label="Corridor principal"
+                />
+              </label>
+            </div>
+
+            <fieldset class="full" data-label="Fréquence du trajet">
+              <legend>À quelle fréquence effectues-tu ce trajet ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="frequence_trajet" value="quotidien" required /> Quotidien (5 j/semaine)</label>
+                <label><input type="radio" name="frequence_trajet" value="3-4" /> 3-4 fois/semaine</label>
+                <label><input type="radio" name="frequence_trajet" value="1-2" /> 1-2 fois/semaine</label>
+                <label><input type="radio" name="frequence_trajet" value="occasionnel" /> Occasionnel</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Ouverture à de nouveaux passagers">
+              <legend>Serais-tu prêt·e à prendre des passagers qui ne sont pas encore des proches ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="ouverture_passagers" value="oui" required /> Oui sans souci</label>
+                <label><input type="radio" name="ouverture_passagers" value="peut-etre" /> Peut-être, à discuter</label>
+                <label><input type="radio" name="ouverture_passagers" value="non" /> Pas pour l'instant</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Participation financière souhaitée">
+              <legend>Qu'attends-tu comme participation financière par passager ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="niveau_participation" value="partage_carburant" required /> Partage équitable du carburant</label>
+                <label><input type="radio" name="niveau_participation" value="contribution_symbolique" /> Contribution symbolique</label>
+                <label><input type="radio" name="niveau_participation" value="tarif_fixe" /> Tarif fixe défini à l'avance</label>
+                <label><input type="radio" name="niveau_participation" value="a_discuter" /> On en discute selon le trajet</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Critères de confiance importants">
+              <legend>Pour te sentir à l'aise, qu'est-ce qui compte le plus ? (plusieurs choix)</legend>
+              <div class="options multi">
+                <label><input type="checkbox" name="criteres_confiance" value="verification" /> Profils vérifiés (numéro, identité)</label>
+                <label><input type="checkbox" name="criteres_confiance" value="paiement-securise" /> Paiement sécurisé sans cash</label>
+                <label><input type="checkbox" name="criteres_confiance" value="points-securises" /> Points de prise en charge officiels</label>
+                <label><input type="checkbox" name="criteres_confiance" value="notes" /> Notes/avis des passagers</label>
+                <label><input type="checkbox" name="criteres_confiance" value="support" /> Support humain en cas d'imprévu</label>
+                <label><input type="checkbox" name="criteres_confiance" value="autre" /> Autre (à préciser en commentaire)</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Canal de contact préféré">
+              <legend>Comment préfères-tu être contacté·e pour les tests pilotes ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="canal_contact" value="whatsapp" required /> WhatsApp</label>
+                <label><input type="radio" name="canal_contact" value="telegram" /> Telegram</label>
+                <label><input type="radio" name="canal_contact" value="sms" /> SMS</label>
+                <label><input type="radio" name="canal_contact" value="email" /> E-mail</label>
+              </div>
+            </fieldset>
+
+            <div class="form-grid">
+              <label>
+                <span>Numéro WhatsApp (avec indicatif)</span>
+                <input
+                  type="tel"
+                  name="numero_whatsapp"
+                  placeholder="Ex. +225 07 00 00 00"
+                  autocomplete="tel"
+                  data-label="Numéro WhatsApp"
+                />
+              </label>
+              <label>
+                <span>E-mail (optionnel)</span>
+                <input type="email" name="email" autocomplete="email" data-label="E-mail" />
+              </label>
+              <label class="full">
+                <span>Commentaires, conditions particulières ou questions</span>
+                <textarea
+                  name="commentaires"
+                  rows="4"
+                  placeholder="Ex. horaires variables selon les jours, besoin de participer aux frais de parking…"
+                  data-label="Commentaires"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="cta">Je partage mes réponses</button>
+              <p class="privacy">Un récapitulatif s'affichera pour que tu puisses l'enregistrer et nous l'envoyer par le canal de ton choix.</p>
+              <p class="form-success" role="status" aria-live="polite"></p>
+            </div>
+            <div class="form-summary" aria-live="polite"></div>
+          </form>
+
+          <form id="passenger-form" class="waitlist-form hidden" autocomplete="on">
+            <h3>Je cherche un trajet (passager·ère)</h3>
+            <p class="form-intro">
+              On veut savoir d'où tu pars, combien tu dépenses et ce qu'il te faudrait pour covoiturer sereinement.
+              Les questions marquées d'une astérisque (*) sont nécessaires pour te recontacter.
+            </p>
+
+            <div class="form-grid">
+              <label>
+                <span>Prénom (optionnel)</span>
+                <input type="text" name="prenom" autocomplete="given-name" data-label="Prénom" />
+              </label>
+              <label>
+                <span>Pays actuel *</span>
+                <select name="pays" required data-label="Pays actuel">
+                  <option value="" disabled selected>Choisis une option</option>
+                  <option value="cote-ivoire">Côte d'Ivoire</option>
+                  <option value="france">France</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </label>
+              <label>
+                <span>Quartier de départ *</span>
+                <input
+                  type="text"
+                  name="quartier_depart"
+                  placeholder="Ex. Koumassi, Cocody Danga…"
+                  required
+                  data-label="Quartier de départ"
+                />
+              </label>
+              <label>
+                <span>Destination principale *</span>
+                <input
+                  type="text"
+                  name="destination"
+                  placeholder="Ex. Plateau, Zone industrielle…"
+                  required
+                  data-label="Destination principale"
+                />
+              </label>
+              <label>
+                <span>Heure de départ souhaitée</span>
+                <input type="time" name="heure_depart" data-label="Heure de départ souhaitée" />
+              </label>
+              <label>
+                <span>Heure de retour souhaitée</span>
+                <input type="time" name="heure_retour" data-label="Heure de retour souhaitée" />
+              </label>
+              <label>
+                <span>Mode de transport actuel *</span>
+                <select name="mode_actuel" required data-label="Mode de transport actuel">
+                  <option value="" disabled selected>Sélectionne</option>
+                  <option value="taxi">Taxi compteur</option>
+                  <option value="woro-woro">Wôrô-wôrô / gbaka</option>
+                  <option value="vtc">VTC (Yango, Uber, Heetch…)</option>
+                  <option value="moto">Moto-taxi</option>
+                  <option value="marche">Marche / vélo</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </label>
+              <label>
+                <span>Dépense moyenne par trajet (en FCFA) *</span>
+                <input
+                  type="number"
+                  name="cout_trajet"
+                  min="0"
+                  step="100"
+                  placeholder="Ex. 2000"
+                  required
+                  data-label="Dépense moyenne par trajet"
+                />
+              </label>
+            </div>
+
+            <fieldset class="full" data-label="Fréquence du trajet">
+              <legend>Combien de fois fais-tu ce trajet ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="frequence_trajet" value="quotidien" required /> Quotidien (5 j/semaine)</label>
+                <label><input type="radio" name="frequence_trajet" value="3-4" /> 3-4 fois/semaine</label>
+                <label><input type="radio" name="frequence_trajet" value="1-2" /> 1-2 fois/semaine</label>
+                <label><input type="radio" name="frequence_trajet" value="occasionnel" /> Occasionnel</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Temps d'attente acceptable">
+              <legend>Combien de temps es-tu prêt·e à attendre un conducteur ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="attente_max" value="5" required /> Jusqu'à 5 minutes</label>
+                <label><input type="radio" name="attente_max" value="10" /> 10 minutes</label>
+                <label><input type="radio" name="attente_max" value="15" /> 15 minutes</label>
+                <label><input type="radio" name="attente_max" value="plus" /> Plus si le prix est intéressant</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Confort avec un conducteur inconnu">
+              <legend>Serais-tu prêt·e à monter avec un conducteur inconnu ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="ouverture_conducteur" value="oui" required /> Oui, si le profil est vérifié</label>
+                <label><input type="radio" name="ouverture_conducteur" value="peut-etre" /> Peut-être, avec recommandations</label>
+                <label><input type="radio" name="ouverture_conducteur" value="non" /> Non, pas pour l'instant</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Éléments rassurants">
+              <legend>Qu'est-ce qui te rassure le plus ? (plusieurs choix)</legend>
+              <div class="options multi">
+                <label><input type="checkbox" name="criteres_confiance" value="verification" /> Profils vérifiés (CNI / numéro)</label>
+                <label><input type="checkbox" name="criteres_confiance" value="photo" /> Photo + description du conducteur</label>
+                <label><input type="checkbox" name="criteres_confiance" value="points-securises" /> Points de rendez-vous surveillés</label>
+                <label><input type="checkbox" name="criteres_confiance" value="notes" /> Notes/avis d'autres passagers</label>
+                <label><input type="checkbox" name="criteres_confiance" value="suivi" /> Suivi en temps réel par un proche</label>
+                <label><input type="checkbox" name="criteres_confiance" value="autre" /> Autre (à préciser)</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="full" data-label="Budget idéal">
+              <legend>Combien accepterais-tu de payer par rapport à ton budget actuel ? *</legend>
+              <div class="options">
+                <label><input type="radio" name="budget_partage" value="moins50" required /> 50&nbsp;% moins cher minimum</label>
+                <label><input type="radio" name="budget_partage" value="moins30" /> 30&nbsp;% moins cher</label>
+                <label><input type="radio" name="budget_partage" value="egal" /> Même prix mais service plus fiable</label>
+                <label><input type="radio" name="budget_partage" value="plus" /> Plus cher si sécurité &amp; confort supérieurs</label>
+              </div>
+            </fieldset>
+
+            <div class="form-grid">
+              <label>
+                <span>Numéro WhatsApp (avec indicatif)</span>
+                <input
+                  type="tel"
+                  name="numero_whatsapp"
+                  placeholder="Ex. +225 05 00 00 00"
+                  autocomplete="tel"
+                  data-label="Numéro WhatsApp"
+                />
+              </label>
+              <label>
+                <span>E-mail (optionnel)</span>
+                <input type="email" name="email" autocomplete="email" data-label="E-mail" />
+              </label>
+              <label class="full">
+                <span>Partage-nous ton principal frein ou ton idée pour améliorer le service</span>
+                <textarea
+                  name="commentaires"
+                  rows="4"
+                  placeholder="Ex. besoin d'un trajet retour tardif, envie d'un système de parrainage…"
+                  data-label="Freins ou idées"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="cta">Je partage mes réponses</button>
+              <p class="privacy">Un récapitulatif s'affichera pour que tu puisses l'enregistrer et nous l'envoyer par le canal de ton choix.</p>
+              <p class="form-success" role="status" aria-live="polite"></p>
+            </div>
+            <div class="form-summary" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="container">
+        <h2>Ce que l'on analyse avec vos réponses</h2>
+        <p class="section-lead">
+          Grâce à vos retours, on prépare un pilote réaliste. Voici les principaux indicateurs que nous suivons avant de lancer la phase de test.
+        </p>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Cartographie des corridors</h3>
+            <p>
+              Origine/destination, horaires de pointe, nombre de places disponibles… Ces données nous aident à choisir les deux premiers points de rendez-vous sécurisés.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Équilibre prix vs. confiance</h3>
+            <p>
+              Nous comparons votre budget actuel aux montants jugés acceptables pour un trajet partagé afin de définir une grille de contribution transparente.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Conditions de succès</h3>
+            <p>
+              Temps d'attente maximal, critères de sécurité prioritaires et canaux de communication préférés déterminent l'expérience minimum à proposer dès le pilote.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="parcours">
+      <div class="container">
+        <h2>La suite : comment ton retour est utilisé</h2>
+        <div class="timeline">
+          <article>
+            <h3>1. Analyse &amp; synthèse</h3>
+            <p>Nous consolidons les réponses chaque semaine et identifions les corridors et horaires prioritaires. Un récap anonymisé sera partagé à la communauté.</p>
+          </article>
+          <article>
+            <h3>2. Groupe pilote</h3>
+            <p>Les personnes intéressées reçoivent une invitation à rejoindre un groupe WhatsApp/Telegram dédié. On teste un dispatch manuel sur un corridor choisi.</p>
+          </article>
+          <article>
+            <h3>3. Prototype ciblé</h3>
+            <p>Les informations collectées (attente max, critères de confiance) guident le développement de la première version de l'app et des points de rendez-vous officiels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container section-grid">
+        <div>
+          <h2>Besoin d'en parler ?</h2>
+          <p class="section-lead">
+            Tu as une entreprise, une école ou une communauté sur un corridor fréquenté ? Discutons pour co-construire une phase de test.
+          </p>
+          <ul class="insights-list">
+            <li>Envie de co-organiser des points de rendez-vous sécurisés.</li>
+            <li>Besoin de données agrégées pour un rapport mobilité interne.</li>
+            <li>Idées pour les incitations conducteurs (carburant, parking, etc.).</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <h3>Contact direct</h3>
+          <p>E-mail : <a href="mailto:team.coci@gmail.com">team.coci@gmail.com</a></p>
+          <p>WhatsApp : <a href="https://wa.me/2250700000000" target="_blank" rel="noopener">+225 07 00 00 00</a></p>
+          <p>Notion de suivi : <a href="https://www.notion.so" target="_blank" rel="noopener">Accéder au tableau public</a></p>
+          <p class="note">On répond sous 24 h, même depuis la France 🇫🇷 ou la Côte d'Ivoire 🇨🇮.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">COCI</div>
+          <p>Collectif de covoiturage intelligent. Ensemble, on fluidifie les trajets quotidiens à Abidjan.</p>
+        </div>
+        <div>
+          <h4>Raccourcis</h4>
+          <ul class="footer-links">
+            <li><a href="#questionnaire">Remplir le questionnaire</a></li>
+            <li><a href="#insights">Nos apprentissages</a></li>
+            <li><a href="#parcours">La suite</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivre le projet</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> COCI. Tous droits réservés.</p>
+        <p>Fait avec ❤️ par une équipe basée entre Abidjan et la France.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
